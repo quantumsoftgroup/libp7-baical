@@ -21,6 +21,10 @@
 #ifndef PSIGNAL_H
 #define PSIGNAL_H
 
+#ifdef MINGW
+#include "gcc_stub.h"
+#endif
+
 #include <new.h>
 #include <crtdbg.h>
 #include "signal.h"
